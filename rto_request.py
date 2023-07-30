@@ -5,7 +5,7 @@ from requests import get
 urllib3.disable_warnings()
 
 #DB connection
-conn = psycopg2.connect(database ="postgres", user = "postgres",password = "passwd", host = "localhost",port = "5432")
+conn = psycopg2.connect(database ="postgres", user = "your_username" password = "your_passwd", host = "your_hostname",port = "port_number")
 print("Connection Successful to PostgreSQL")
 cur = conn.cursor() 
 
